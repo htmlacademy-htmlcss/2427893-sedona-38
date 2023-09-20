@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Денис Седов](https://up.htmlacademy.ru/htmlcss/38/user/2427893).
-* Наставник: `Неизвестно`.
+- Студент: [Денис Седов](https://up.htmlacademy.ru/htmlcss/38/user/2427893).
+- Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
 
 ---
 
