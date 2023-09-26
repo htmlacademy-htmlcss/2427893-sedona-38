@@ -27,7 +27,7 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <span class="visually-hidden">Поиск</span>
-            <button class="navigation-search">
+            <button type="submit" class="navigation-search">
               <img src="#" alt="Поиск" />
             </button>
           </li>
@@ -38,7 +38,7 @@
           </li>
           <li class="navigation-item">
             <span class="visually-hidden">Кнопка поиска гостиницы</span>
-            <button class="button navigation-button-search-hotel">
+            <button type="submit" class="button navigation-button-search-hotel">
               Хочу сюда!
             </button>
           </li>
@@ -50,12 +50,11 @@
       <nav class="catalog-navigation">
         <ul class="catalog-navigation-list">
           <li class="catalog-navigation-item">
-            <a href="./index.html" class="catalog-navigation-link"
-              ><img
-                src="#"
-                alt="Картинка ссылки 'Домой'"
-                class="catalog-navigation-img"
-            /></a>
+            <img
+              src="#"
+              alt="Картинка ссылки 'Домой'"
+              class="catalog-navigation-img"
+            />
           </li>
           <li class="catalog-navigation-item">
             <img
@@ -64,9 +63,7 @@
               class="catalog-navigation-path"
             />
           </li>
-          <li class="catalog-navigation-item">
-            <a href="" class="catalog-navigation-link">Гостиницы</a>
-          </li>
+          <li class="catalog-navigation-item">Гостиницы</li>
         </ul>
       </nav>
       <section data-test="filter" class="product-info">
@@ -134,12 +131,14 @@
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешовые</option>
         </select>
-        <a href="#" class="button button-light">
+        <button class="button button-light">
+          <img src="#" alt="Картинка имитирущая список" />
           <span class="visually-hidden">Показать список</span>
-        </a>
-        <a class="button" href="#">
+        </button>
+        <button class="button">
+          <img src="#" alt="Картинка имитирущая карточки" />
           <span class="visually-hidden">Показать карточки</span>
-        </a>
+        </button>
         <section class="cart">
           <ul class="cart-list">
             <li class="cart-item">
@@ -150,7 +149,9 @@
               <p class="cart-subtext">Гостиница</p>
               <span class="product-card-price">От 4000 ₽</span>
               <a href="#" class="button">Подробнее</a>
-              <button class="button cart-button">В избранное</button>
+              <button type="submit" class="button cart-button">
+                В избранное
+              </button>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -160,7 +161,9 @@
               <p class="cart-subtext">Гостиница</p>
               <span class="product-card-price">От 5000 ₽</span>
               <a href="#" class="button">Подробнее</a>
-              <button class="button cart-button">В избранное</button>
+              <button type="submit" class="button cart-button">
+                В избранное
+              </button>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -170,7 +173,9 @@
               <p class="cart-subtext">Гостиница</p>
               <span class="product-card-price">От 2500 ₽</span>
               <a href="#" class="button">Подробнее</a>
-              <button class="button cart-button">В избранное</button>
+              <button type="submit" class="button cart-button">
+                В избранное
+              </button>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -180,7 +185,9 @@
               <p class="cart-subtext">Гостиница</p>
               <span class="product-card-price">От 1500 ₽</span>
               <a href="#" class="button">Подробнее</a>
-              <button class="button cart-button">В избранное</button>
+              <button type="submit" class="button cart-button">
+                В избранное
+              </button>
             </li>
           </ul>
           <ul class="pagination">
@@ -219,35 +226,37 @@
               placeholder="Ваш e-mail"
             />
           </label>
-          <button class="button input-email-button">Подписаться</button>
+          <button type="submit" class="button input-email-button">
+            Подписаться
+          </button>
         </form>
       </section>
-      <section class="footer-socials">
+      <section class="footer-contacts">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-socials-list">
-          <li class="footer-socials-item">
+        <ul class="footer-contacts-list">
+          <li class="footer-contacts-item">
             <img src="#" alt="Иконка Вконтакте" />
           </li>
-          <li class="footer-socials-item">
+          <li class="footer-contacts-item">
             <img src="#" alt="Иконка Телеграм" />
           </li>
-          <li class="footer-socials-item">
+          <li class="footer-contacts-item">
             <img src="#" alt="Иконка YouTube" />
           </li>
         </ul>
       </section>
-      <section class="footer-phone">
+      <div class="footer-phone">
         <h2 class="visually-hidden">Телефонный номер</h2>
         <a href="tel:+78128121212" class="footer-phone-number"
           >+7 (812) 812-12-12</a
         >
-      </section>
-      <section class="footer-contact-site">
+      </div>
+      <div class="footer-contact-site">
         <h2 class="visually-hidden">Сайт компании HtmlAcademy</h2>
         <a href="https://htmlacademy.ru/study" class="footer-contact-site-more"
           ><img src="#" alt="Ссылка на сайт HtmlAcademy"
         /></a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
