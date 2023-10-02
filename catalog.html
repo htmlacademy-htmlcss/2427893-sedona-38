@@ -11,11 +11,15 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html"
-              ><img src="#" alt="Логотип"
+              ><img
+                src="/images/logo.svg"
+                width="140"
+                height="70"
+                alt="Логотип"
             /></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="./index.html">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -27,18 +31,27 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <span class="visually-hidden">Поиск</span>
-            <button type="submit" class="navigation-search">
-              <img src="#" alt="Поиск" />
+            <button class="navigation-search">
+              <img
+                src="/images/search.svg"
+                width="20"
+                height="20"
+                alt="Поиск"
+              />
             </button>
           </li>
           <li class="navigation-item">
             <a class="navigation-favorites" href="#"
-              ><img src="#" alt="Избранное"
+              ><img
+                src="/images/heart.svg"
+                width="20"
+                height="20"
+                alt="Избранное"
             /></a>
           </li>
           <li class="navigation-item">
             <span class="visually-hidden">Кнопка поиска гостиницы</span>
-            <button type="submit" class="button navigation-button-search-hotel">
+            <button class="button navigation-button-search-hotel">
               Хочу сюда!
             </button>
           </li>
@@ -51,16 +64,19 @@
         <ul class="catalog-navigation-list">
           <li class="catalog-navigation-item">
             <img
-              src="#"
+              src="/images/home_catalog_navogation.svg"
               alt="Картинка ссылки 'Домой'"
               class="catalog-navigation-img"
+              width="13"
+              height="15"
             />
           </li>
           <li class="catalog-navigation-item">
             <img
-              src="#"
+              src="/images/arrow.svg"
               alt="Картинка стрелочки"
               class="catalog-navigation-path"
+              width="8"
             />
           </li>
           <li class="catalog-navigation-item">Гостиницы</li>
@@ -132,18 +148,33 @@
           <option value="popular">Сначала дешовые</option>
         </select>
         <button class="button button-light">
-          <img src="#" alt="Картинка имитирущая список" />
+          <img
+            src="/images/View-icon1.svg"
+            width="16"
+            height="14"
+            alt="Картинка имитирущая список"
+          />
           <span class="visually-hidden">Показать список</span>
         </button>
         <button class="button">
-          <img src="#" alt="Картинка имитирущая карточки" />
+          <img
+            src="/images/View-icon2.svg"
+            width="16"
+            height="14"
+            alt="Картинка имитирущая карточки"
+          />
           <span class="visually-hidden">Показать карточки</span>
         </button>
         <section class="cart">
           <ul class="cart-list">
             <li class="cart-item">
               <a href="#" class="cart-img"
-                ><img src="#" alt="Картинка товара" class="carg-img"
+                ><img
+                  src="/images/hotel-1.jpg"
+                  alt="Картинка товара"
+                  class="carg-img"
+                  width="300"
+                  height="212"
               /></a>
               <h3 class="cart-text">Amara Resort & Spa</h3>
               <p class="cart-subtext">Гостиница</p>
@@ -155,7 +186,12 @@
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
-                ><img src="#" alt="Картинка товара" class="carg-img"
+                ><img
+                  src="/images/hotel-2.jpg"
+                  alt="Картинка товара"
+                  class="carg-img"
+                  width="300"
+                  height="212"
               /></a>
               <h3 class="cart-text">Villas at Poco Diablo</h3>
               <p class="cart-subtext">Гостиница</p>
@@ -167,7 +203,12 @@
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
-                ><img src="#" alt="Картинка товара" class="carg-img"
+                ><img
+                  src="/images/hotel-3.jpg"
+                  alt="Картинка товара"
+                  class="carg-img"
+                  width="300"
+                  height="212"
               /></a>
               <h3 class="cart-text">Desert Quail Inn</h3>
               <p class="cart-subtext">Гостиница</p>
@@ -179,7 +220,12 @@
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
-                ><img src="#" alt="Картинка товара" class="carg-img"
+                ><img
+                  src="/images/hotel-4.jpg"
+                  alt="Картинка товара"
+                  class="carg-img"
+                  width="300"
+                  height="212"
               /></a>
               <h3 class="cart-text">GreenTree Inn</h3>
               <p class="cart-subtext">Гостиница</p>
@@ -208,7 +254,7 @@
       </section>
     </main>
     <footer data-test="footer" class="footer">
-      <section data-test="subscribe" class="newslatter newslatter-catalog">
+      <section data-test="subscribe" class="newslatter">
         <h2 class="newslatter">Подпишитесь на рассылку</h2>
         <p class="newslatter-subtext">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -226,37 +272,54 @@
               placeholder="Ваш e-mail"
             />
           </label>
-          <button type="submit" class="button input-email-button">
-            Подписаться
-          </button>
+          <button class="button input-email-button">Подписаться</button>
         </form>
       </section>
-      <section class="footer-contacts">
+      <section class="footer-socials">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-contacts-list">
-          <li class="footer-contacts-item">
-            <img src="#" alt="Иконка Вконтакте" />
+        <ul class="footer-socials-list">
+          <li class="footer-socials-item">
+            <img
+              src="/images/logo_VK.svg"
+              alt="Иконка Вконтакте"
+              width="24"
+              height="14"
+            />
           </li>
-          <li class="footer-contacts-item">
-            <img src="#" alt="Иконка Телеграм" />
+          <li class="footer-socials-item">
+            <img
+              src="/images/logo_Telegram.svg"
+              width="24"
+              height="14"
+              alt="Иконка Телеграм"
+            />
           </li>
-          <li class="footer-contacts-item">
-            <img src="#" alt="Иконка YouTube" />
+          <li class="footer-socials-item">
+            <img
+              src="/images/logo_Youtube.svg"
+              width="24"
+              height="14"
+              alt="Иконка YouTube"
+            />
           </li>
         </ul>
       </section>
-      <div class="footer-phone">
+      <section class="footer-phone">
         <h2 class="visually-hidden">Телефонный номер</h2>
         <a href="tel:+78128121212" class="footer-phone-number"
           >+7 (812) 812-12-12</a
         >
-      </div>
-      <div class="footer-contact-site">
+      </section>
+      <section class="footer-contact-site">
         <h2 class="visually-hidden">Сайт компании HtmlAcademy</h2>
         <a href="https://htmlacademy.ru/study" class="footer-contact-site-more"
-          ><img src="#" alt="Ссылка на сайт HtmlAcademy"
+          ><img
+            src="/images/Logo _HtmlAcademy.svg"
+            alt="Ссылка на сайт HtmlAcademy"
+            width="115"
+            height="33"
         /></a>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
