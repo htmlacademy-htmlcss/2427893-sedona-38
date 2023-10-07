@@ -13,6 +13,7 @@
   src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
+
 a {
   text-decoration: none;
 }
@@ -24,6 +25,8 @@ body {
   font-weight: 400;
   background-color: #fff;
   color: black;
+  margin: 0;
+  box-sizing: border-box;
 }
 .visually-hidden {
   position: fixed;
@@ -40,11 +43,11 @@ body {
 
 .header-main {
   background-color: #fff;
-  color: var(--texts-texts-basic, #000);
+  color: #000;
 }
 
 .navigation-link {
-  color: var(--texts-texts-basic, #000);
+  color: #000;
 
   /* Headings/Heading 4 */
   font-size: 20px;
@@ -62,7 +65,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: var(--texts-background-deafault, #fff);
+  color: #fff;
   text-align: center;
 
   /* Buttons/Button small */
@@ -72,20 +75,20 @@ body {
   line-height: 20px; /* 125% */
   text-transform: uppercase;
   border-radius: 4px;
-  background: var(--buttons-basic, #756157);
+  background: #756157;
 }
 
 .main-hero {
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/background-hero.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: 485px;
-  background-color: #82b3d3;
+  background-size: cover;
+  min-height: 485px;
+  background-color: white;
   color: #000;
 }
 
 .about-text {
-  color: var(--texts-texts-basic, #000);
+  color: #000;
   text-align: center;
 
   /* Headings/Heading 2 */
@@ -97,7 +100,7 @@ body {
 }
 
 .about-subtext {
-  color: var(--texts-second, #333);
+  color: #333;
   text-align: center;
 
   /* Texts/Text basic */
@@ -107,7 +110,7 @@ body {
 }
 
 .navigation-item-text {
-  color: var(--texts-background-deafault, #fff);
+  color: #fff;
   text-align: center;
 
   /* Headings/Heading 3 */
@@ -118,16 +121,16 @@ body {
 }
 
 .blue {
-  background: var(--background-basic-3, #82b3d3);
+  background: #82b3d3;
 }
 
 .navigation-item-subtext-white {
-  color: var(--texts-background-deafault, #fff);
+  color: #fff;
   text-align: center;
 }
 
 .navigation-item-text {
-  color: var(--texts-texts-basic, #000);
+  color: #000;
   text-align: center;
 
   /* Headings/Heading 3 */
@@ -137,12 +140,12 @@ body {
   text-transform: uppercase;
 }
 .navigation-item-subtext {
-  color: var(--texts-second, #333);
+  color: #333;
   text-align: center;
 }
 
 .offer-text {
-  color: var(--texts-texts-basic, #000);
+  color: #000;
   text-align: center;
 
   /* Headings/Heading 2 */
@@ -153,7 +156,7 @@ body {
 }
 
 .offer-subtext {
-  color: var(--texts-second, #333);
+  color: #333;
   text-align: center;
 
   /* Texts/Text basic */
@@ -172,7 +175,7 @@ body {
 }
 
 .offer-item-text {
-  color: var(--texts-texts-basic, #000);
+  color: #000;
   text-align: center;
 
   /* Headings/Heading 3 */
@@ -183,7 +186,7 @@ body {
 }
 
 .offer-item-subtext {
-  color: var(--texts-second, #333);
+  color: #333;
   text-align: center;
 
   /* Texts/Text blocks */
@@ -193,7 +196,7 @@ body {
 }
 
 .registration-text {
-  color: var(--texts-texts-basic, #000);
+  color: #000;
   text-align: center;
 
   /* Headings/Heading 2 */
@@ -203,7 +206,7 @@ body {
   text-transform: uppercase;
 }
 .registration-subtext {
-  color: var(--texts-second, #333);
+  color: #333;
   text-align: center;
 
   /* Texts/Text basic */
@@ -218,7 +221,7 @@ body {
   gap: 10px;
   width: auto;
   height: auto;
-  color: var(--texts-background-deafault, #fff);
+  color: #fff;
   text-align: center;
 
   /* Buttons/Button big */
@@ -239,7 +242,7 @@ body {
 }
 
 .newslatter-text {
-  color: var(--texts-background-deafault, #fff);
+  color: #fff;
 
   /* Headings/Heading 2 */
   font-size: 30px;
@@ -249,7 +252,7 @@ body {
   text-align: center;
 }
 .newslatter-subtext {
-  color: var(--texts-background-deafault, #fff);
+  color: #fff;
   text-align: center;
 }
 .footer-socials-list {
@@ -257,7 +260,7 @@ body {
 }
 
 .footer-phone-number {
-  color: var(--texts-texts-basic, #000);
+  color: #000;
   text-align: center;
 
   font-size: 40px;
@@ -281,7 +284,7 @@ fieldset {
   border: none;
 }
 .main-catalog-text {
-  color: var(--texts-background-deafault, #fff);
+  color: #fff;
 
   /* Headings/Heading 1 */
   font-size: 60px;
@@ -294,7 +297,7 @@ ul {
 }
 
 fieldset > legend {
-  color: var(--texts-background-deafault, #fff);
+  color: #fff;
 
   /* Headings/Heading 4 */
   font-size: 20px;
@@ -311,8 +314,8 @@ fieldset > legend {
   align-items: center;
   gap: 10px;
   border-radius: 4px;
-  background: var(--buttons-second, #82b3d3);
-  color: var(--texts-background-deafault, #fff);
+  background: #82b3d3;
+  color: #fff;
   text-align: center;
 
   /* Buttons/Button small */
@@ -332,7 +335,7 @@ fieldset > legend {
   width: 292px;
   padding: 14px 20px;
   align-items: center;
-  color: var(--texts-second, #333);
+  color: #333;
 
   /* Texts/Text blocks */
   font-size: 18px;
@@ -348,12 +351,12 @@ fieldset > legend {
   align-items: center;
   gap: 10px;
   border-radius: 4px;
-  border: 2px solid var(--icons-basic, #000);
+  border: 2px solid #000;
   background-color: #fff;
 }
 
 .cart-text {
-  color: var(--texts-texts-basic, #000);
+  color: #000;
 
   /* Headings/Heading 3 none case */
 
@@ -362,7 +365,7 @@ fieldset > legend {
   line-height: 28px; /* 116.667% */
 }
 .cart-subtext {
-  color: var(--texts-second, #333);
+  color: #333;
 
   /* Texts/Text blocks */
   font-size: 18px;
@@ -370,9 +373,7 @@ fieldset > legend {
   line-height: 21px; /* 116.667% */
 }
 .product-card-price {
-  color: var(--texts-second, #333);
-  text-align: right;
-
+  color: #333;
   /* Texts/Text blocks */
   font-size: 18px;
   font-weight: 400;
@@ -383,7 +384,7 @@ fieldset > legend {
 
   align-items: center;
   gap: 10px;
-  color: var(--texts-background-deafault, #fff);
+  color: #fff;
   text-align: center;
 
   /* Buttons/Button small */
@@ -402,8 +403,8 @@ fieldset > legend {
   width: auto;
   height: auto;
   gap: 10px;
-  background: var(--buttons-second, #82b3d3);
-  color: var(--texts-background-deafault, #fff);
+  background: #82b3d3;
+  color: #fff;
   text-align: center;
   /* Buttons/Button small */
   font-size: 16px;
@@ -412,6 +413,30 @@ fieldset > legend {
   text-transform: uppercase;
   border: none;
 }
-.cart-item {
+
+.color-lightblue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.lightblue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.rating-img {
+  display: block;
+}
+
+.rating-subtext {
+  padding: 9px 22px;
+
+  border-radius: 4px;
+  background: #f2f2f2;
+  color: #333;
   text-align: center;
+
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
 }
