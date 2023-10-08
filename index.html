@@ -27,18 +27,14 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <span class="visually-hidden">Поиск</span>
-            <button class="navigation-search">
-              <img src="images/search.svg" width="20" height="20" alt="Поиск" />
+            <button class="navigation-search searh-img">
+              <span class="visually-hidden">Кнопка поиска</span>
             </button>
           </li>
           <li class="navigation-item">
-            <a class="navigation-favorites" href="#"
-              ><img
-                src="images/heart.svg"
-                width="20"
-                height="20"
-                alt="Картинка избранное"
-            /></a>
+            <a class="navigation-favorites heart-img" href="#">
+              <span class="visually-hidden">Ссылка Избранное</span>
+            </a>
           </li>
           <li class="navigation-item">
             <span class="visually-hidden">Кнопка поиска гостиницы</span>
@@ -128,40 +124,28 @@
           Опытный персонал и качественное обслуживание!
         </p>
         <ul class="offer-list">
-          <li class="offer-item">
-            <img
-              class="offer-img"
-              src="images/house.svg"
-              alt="Картинка дома"
-              width="75"
-              height="72"
-            />
+          <li class="offer-item color-lightblue">
+            <div class="offer-item-house">
+              <span class="visually-hidden">Каритинка домика</span>
+            </div>
             <h3 class="offer-item-text">Жильё</h3>
             <p class="offer-item-subtext">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="offer-item">
-            <img
-              class="offer-img"
-              src="images/burger.svg"
-              alt="Картинка гамбургера"
-              width="75"
-              height="72"
-            />
+            <div class="offer-item-eat">
+              <span class="visually-hidden">Каритинка бургера</span>
+            </div>
             <h3 class="offer-item-text">Еда</h3>
             <p class="offer-item-subtext">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="offer-item">
-            <img
-              class="offer-img"
-              src="images/presents.svg"
-              alt="Картинка сувенира"
-              width="75"
-              height="72"
-            />
+          <li class="offer-item color-lightblue">
+            <div class="offer-item-present">
+              <span class="visually-hidden">Каритинка подарка</span>
+            </div>
             <h3 class="offer-item-text">Сувениры</h3>
             <p class="offer-item-subtext">
               Не только китайского, но и настоящего местного производства!
@@ -207,28 +191,31 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-socials-list">
           <li class="footer-socials-item">
-            <img
-              src="images/logo_VK.svg"
-              alt="Иконка Вконтакте"
-              width="24"
-              height="14"
-            />
+            <a
+              href="#"
+              class="social-link social-link-VK"
+              aria-label="Мы во Вконтакте"
+            >
+              <span class="visually-hidden">Ссылка во Вконтакте</span>
+            </a>
           </li>
           <li class="footer-socials-item">
-            <img
-              src="images/logo_Telegram.svg"
-              width="24"
-              height="14"
-              alt="Иконка Телеграм"
-            />
+            <a
+              href="#"
+              class="social-link social-link-Telegram"
+              aria-label="Мы во Вконтакте"
+            >
+              <span class="visually-hidden">Ссылка в Телеграмме</span>
+            </a>
           </li>
           <li class="footer-socials-item">
-            <img
-              src="images/logo_Youtube.svg"
-              width="24"
-              height="14"
-              alt="Иконка YouTube"
-            />
+            <a
+              href="#"
+              class="social-link social-link-YouTube"
+              aria-label="Мы во Вконтакте"
+            >
+              <span class="visually-hidden">Ссылка на YouTube</span>
+            </a>
           </li>
         </ul>
       </section>

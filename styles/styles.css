@@ -36,9 +36,30 @@ body {
   list-style-type: none;
 }
 .navigation-search {
-  border: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background: transparent;
-  padding: 0;
+  border: none;
+}
+
+.searh-img {
+  background-image: url("../images/search.svg");
+}
+.navigation-favorites {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heart-img {
+  background-image: url("../images/heart.svg");
 }
 
 .header-main {
@@ -82,7 +103,7 @@ body {
   background-image: url("../images/background-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 485px;
+  min-height: 680px;
   background-color: white;
   color: #000;
   background-position: center bottom;
@@ -175,6 +196,31 @@ body {
   text-align: center;
 }
 
+.offer-item {
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.offer-item-house {
+  display: inline-block;
+  background-image: url("../images/house.svg");
+  width: 75px;
+  height: 72px;
+}
+.offer-item-eat {
+  display: inline-block;
+  background-image: url("../images/burger.svg");
+  width: 75px;
+  height: 72px;
+}
+.offer-item-present {
+  display: inline-block;
+  background-image: url("../images/presents.svg");
+  width: 75px;
+  height: 72px;
+}
+
 .offer-item-text {
   color: #000;
   text-align: center;
@@ -259,6 +305,29 @@ body {
 .footer-socials-list {
   list-style-type: none;
 }
+.social-link {
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.social-link-VK {
+  width: 24px;
+  height: 14px;
+  background-image: url("../images/logo_VK.svg");
+}
+.social-link-Telegram {
+  background-image: url("../images/logo_Telegram.svg");
+  width: 18px;
+  height: 16px;
+}
+
+.social-link-YouTube {
+  background-image: url("../images/logo_Youtube.svg");
+  width: 22px;
+  height: 14px;
+}
 
 .footer-phone-number {
   color: #000;
@@ -279,7 +348,7 @@ body {
   color: #fff;
   background-image: url("../images/background-catalog.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 fieldset {
   border: none;
