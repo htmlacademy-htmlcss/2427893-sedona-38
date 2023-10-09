@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Каталог гостиниц</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header data-test="header" class="header-main">
@@ -11,11 +12,7 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html"
-              ><img
-                src="/images/logo.svg"
-                width="140"
-                height="70"
-                alt="Логотип"
+              ><img src="images/logo.svg" width="140" height="70" alt="Логотип"
             /></a>
           </li>
           <li class="navigation-item">
@@ -31,23 +28,10 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <span class="visually-hidden">Поиск</span>
-            <button class="navigation-search">
-              <img
-                src="/images/search.svg"
-                width="20"
-                height="20"
-                alt="Поиск"
-              />
-            </button>
+            <button class="navigation-search searh-img"></button>
           </li>
           <li class="navigation-item">
-            <a class="navigation-favorites" href="#"
-              ><img
-                src="/images/heart.svg"
-                width="20"
-                height="20"
-                alt="Избранное"
-            /></a>
+            <a class="navigation-favorites heart-img" href="#"> </a>
           </li>
           <li class="navigation-item">
             <span class="visually-hidden">Кнопка поиска гостиницы</span>
@@ -59,36 +43,33 @@
       </nav>
     </header>
     <main data-test="main" class="main-catalog">
-      <h1 class="main-catalog-text">Гостиницы Седоны</h1>
-      <nav class="catalog-navigation">
-        <ul class="catalog-navigation-list">
-          <li class="catalog-navigation-item">
-            <img
-              src="/images/home_catalog_navogation.svg"
-              alt="Картинка ссылки 'Домой'"
-              class="catalog-navigation-img"
-              width="13"
-              height="15"
-            />
-          </li>
-          <li class="catalog-navigation-item">
-            <img
-              src="/images/arrow.svg"
-              alt="Картинка стрелочки"
-              class="catalog-navigation-path"
-              width="8"
-            />
-          </li>
-          <li class="catalog-navigation-item">Гостиницы</li>
-        </ul>
-      </nav>
-      <section data-test="filter" class="product-info">
+      <section data-test="filter" class="catalog-filter">
+        <h1 class="main-catalog-text">Гостиницы Седоны</h1>
+        <nav class="catalog-navigation">
+          <ul class="catalog-navigation-list">
+            <li class="catalog-navigation-item">
+              <img
+                src="images/home_catalog_navogation.svg"
+                alt="Картинка ссылки 'Домой'"
+                class="catalog-navigation-img"
+                width="13"
+                height="15"
+              />
+            </li>
+            <li class="catalog-navigation-item">
+              <img
+                src="images/arrow.svg"
+                alt="Картинка стрелочки"
+                class="catalog-navigation-path"
+                width="8"
+              />
+            </li>
+            <li class="catalog-navigation-item">Гостиницы</li>
+          </ul>
+        </nav>
+
         <h2 class="visually-hidden">Список с фильтрами</h2>
-        <form
-          action="https://echo.htmlacademy.ru/"
-          method="get"
-          class="catalog-filter"
-        >
+        <form action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -139,26 +120,37 @@
             <input type="range" min="0" max="9000" step="2" />
           </fieldset>
           <button class="control-button button" type="submit">Применить</button>
-          <button class="control-button button" type="reset">Сбросить</button>
+          <button class="control-button-reset button" type="reset">
+            Сбросить
+          </button>
         </form>
       </section>
       <section data-test="catalog" class="catalog">
-        <h2 class="vissualy-hidden">Фильтр гостиниц</h2>
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешовые</option>
         </select>
         <button class="button button-light">
           <img
-            src="/images/View-icon1.svg"
+            src="images/View-icon1.svg"
             width="16"
             height="14"
             alt="Картинка имитирущая список"
           />
           <span class="visually-hidden">Показать список</span>
         </button>
-        <button class="button">
+        <button class="button button-light">
           <img
-            src="/images/View-icon2.svg"
+            src="images/View-icon2.svg"
+            width="16"
+            height="14"
+            alt="Картинка имитирущая карточки"
+          />
+          <span class="visually-hidden">Показать карточки</span>
+        </button>
+        <button class="button button-light">
+          <img
+            src="images/View-icon3.svg"
             width="16"
             height="14"
             alt="Картинка имитирущая карточки"
@@ -170,7 +162,7 @@
             <li class="cart-item">
               <a href="#" class="cart-img"
                 ><img
-                  src="/images/hotel-1.jpg"
+                  src="images/hotel-1.jpg"
                   alt="Картинка товара"
                   class="carg-img"
                   width="300"
@@ -178,16 +170,22 @@
               /></a>
               <h3 class="cart-text">Amara Resort & Spa</h3>
               <p class="cart-subtext">Гостиница</p>
-              <span class="product-card-price">От 4000 ₽</span>
-              <a href="#" class="button">Подробнее</a>
+              <p class="product-card-price">От 4000 ₽</p>
+              <a href="#" class="button button-cart-more">Подробнее</a>
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
+              <img
+                src="images/Звёзды.svg"
+                alt="рейтинг 4 звезды"
+                class="rating-img"
+              />
+              <span class="rating-subtext">Рейтинг: 8,5</span>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
                 ><img
-                  src="/images/hotel-2.jpg"
+                  src="images/hotel-2.jpg"
                   alt="Картинка товара"
                   class="carg-img"
                   width="300"
@@ -195,16 +193,22 @@
               /></a>
               <h3 class="cart-text">Villas at Poco Diablo</h3>
               <p class="cart-subtext">Гостиница</p>
-              <span class="product-card-price">От 5000 ₽</span>
-              <a href="#" class="button">Подробнее</a>
+              <p class="product-card-price">От 5000 ₽</p>
+              <a href="#" class="button button-cart-more">Подробнее</a>
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
+              <img
+                src="images/Звёзды.svg"
+                alt="рейтинг 4 звезды"
+                class="rating-img"
+              />
+              <span class="rating-subtext">Рейтинг: 9,2</span>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
                 ><img
-                  src="/images/hotel-3.jpg"
+                  src="images/hotel-3.jpg"
                   alt="Картинка товара"
                   class="carg-img"
                   width="300"
@@ -212,16 +216,22 @@
               /></a>
               <h3 class="cart-text">Desert Quail Inn</h3>
               <p class="cart-subtext">Гостиница</p>
-              <span class="product-card-price">От 2500 ₽</span>
-              <a href="#" class="button">Подробнее</a>
+              <p class="product-card-price>">От 2500 ₽</p>
+              <a href="#" class="button button-cart-more">Подробнее</a>
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
+              <img
+                src="images/2_Звезды.svg"
+                alt="рейтинг 4 звезды"
+                class="rating-img"
+              />
+              <span class="rating-subtext">Рейтинг: 6,9</span>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
                 ><img
-                  src="/images/hotel-4.jpg"
+                  src="images/hotel-4.jpg"
                   alt="Картинка товара"
                   class="carg-img"
                   width="300"
@@ -229,11 +239,17 @@
               /></a>
               <h3 class="cart-text">GreenTree Inn</h3>
               <p class="cart-subtext">Гостиница</p>
-              <span class="product-card-price">От 1500 ₽</span>
-              <a href="#" class="button">Подробнее</a>
+              <p class="product-card-price">От 1500 ₽</p>
+              <a href="#" class="button button-cart-more">Подробнее</a>
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
+              <img
+                src="images/3_Звезды.svg"
+                alt="рейтинг 4 звезды"
+                class="rating-img"
+              />
+              <span class="rating-subtext">Рейтинг: 5</span>
             </li>
           </ul>
           <ul class="pagination">
@@ -255,7 +271,7 @@
     </main>
     <footer data-test="footer" class="footer">
       <section data-test="subscribe" class="newslatter">
-        <h2 class="newslatter">Подпишитесь на рассылку</h2>
+        <h2 class="newslatter-text">Подпишитесь на рассылку</h2>
         <p class="newslatter-subtext">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
@@ -279,28 +295,31 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-socials-list">
           <li class="footer-socials-item">
-            <img
-              src="/images/logo_VK.svg"
-              alt="Иконка Вконтакте"
-              width="24"
-              height="14"
-            />
+            <a
+              href="#"
+              class="social-link social-link-VK"
+              aria-label="Мы во Вконтакте"
+            >
+              <span class="visually-hidden">Ссылка во Вконтакте</span>
+            </a>
           </li>
           <li class="footer-socials-item">
-            <img
-              src="/images/logo_Telegram.svg"
-              width="24"
-              height="14"
-              alt="Иконка Телеграм"
-            />
+            <a
+              href="#"
+              class="social-link social-link-Telegram"
+              aria-label="Мы во Вконтакте"
+            >
+              <span class="visually-hidden">Ссылка в Телеграмме</span>
+            </a>
           </li>
           <li class="footer-socials-item">
-            <img
-              src="/images/logo_Youtube.svg"
-              width="24"
-              height="14"
-              alt="Иконка YouTube"
-            />
+            <a
+              href="#"
+              class="social-link social-link-YouTube"
+              aria-label="Мы во Вконтакте"
+            >
+              <span class="visually-hidden">Ссылка на YouTube</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -314,7 +333,7 @@
         <h2 class="visually-hidden">Сайт компании HtmlAcademy</h2>
         <a href="https://htmlacademy.ru/study" class="footer-contact-site-more"
           ><img
-            src="/images/Logo _HtmlAcademy.svg"
+            src="images/Logo _HtmlAcademy.svg"
             alt="Ссылка на сайт HtmlAcademy"
             width="115"
             height="33"
