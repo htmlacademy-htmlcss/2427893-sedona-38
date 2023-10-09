@@ -44,120 +44,137 @@
     </header>
     <main data-test="main" class="main-catalog">
       <section data-test="filter" class="catalog-filter">
-        <h1 class="main-catalog-text">Гостиницы Седоны</h1>
-        <nav class="catalog-navigation">
-          <ul class="catalog-navigation-list">
-            <li class="catalog-navigation-item">
-              <img
-                src="images/home_catalog_navogation.svg"
-                alt="Картинка ссылки 'Домой'"
-                class="catalog-navigation-img"
-                width="13"
-                height="15"
-              />
-            </li>
-            <li class="catalog-navigation-item">
-              <img
-                src="images/arrow.svg"
-                alt="Картинка стрелочки"
-                class="catalog-navigation-path"
-                width="8"
-              />
-            </li>
-            <li class="catalog-navigation-item">Гостиницы</li>
-          </ul>
-        </nav>
+        <div class="container container-filter-flex">
+          <h1 class="main-catalog-text">Гостиницы Седоны</h1>
+          <nav class="catalog-navigation">
+            <ul class="catalog-navigation-list">
+              <li class="catalog-navigation-item">
+                <img
+                  src="images/home_catalog_navogation.svg"
+                  alt="Картинка ссылки 'Домой'"
+                  class="catalog-navigation-img"
+                  width="13"
+                  height="15"
+                />
+              </li>
+              <li class="catalog-navigation-item">
+                <img
+                  src="images/arrow.svg"
+                  alt="Картинка стрелочки"
+                  class="catalog-navigation-path"
+                  width="8"
+                />
+              </li>
+              <li class="catalog-navigation-item">Гостиницы</li>
+            </ul>
+          </nav>
+          <div class="filter-flex">
+            <h2 class="visually-hidden">Список с фильтрами</h2>
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" checked />
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" checked />
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" />
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" checked />
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" />
+                      Отель
+                    </label>
+                  </li>
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" />
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
 
-        <h2 class="visually-hidden">Список с фильтрами</h2>
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" checked />
-                  Бассейн
-                </label>
-              </li>
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" checked />
-                  Парковка
-                </label>
-              </li>
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" />
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="radio" checked />
-                  Гостиница
-                </label>
-              </li>
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="radio" />
-                  Отель
-                </label>
-              </li>
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="radio" />
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-fielter-group">
-            <input type="range" min="0" max="9000" step="2" />
-          </fieldset>
-          <button class="control-button button" type="submit">Применить</button>
-          <button class="control-button-reset button" type="reset">
-            Сбросить
-          </button>
-        </form>
+            <div class="catalog-filter-price-flex">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset class="catalog-fielter-group">
+                  <input type="range" min="0" max="9000" step="2" />
+                </fieldset>
+              </form>
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <button class="control-button button" type="submit">
+                  Применить
+                </button>
+                <button class="control-button-reset button" type="reset">
+                  Сбросить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
-      <section data-test="catalog" class="catalog">
-        <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала дешовые</option>
-        </select>
-        <button class="button button-light">
-          <img
-            src="images/View-icon1.svg"
-            width="16"
-            height="14"
-            alt="Картинка имитирущая список"
-          />
-          <span class="visually-hidden">Показать список</span>
-        </button>
-        <button class="button button-light">
-          <img
-            src="images/View-icon2.svg"
-            width="16"
-            height="14"
-            alt="Картинка имитирущая карточки"
-          />
-          <span class="visually-hidden">Показать карточки</span>
-        </button>
-        <button class="button button-light">
-          <img
-            src="images/View-icon3.svg"
-            width="16"
-            height="14"
-            alt="Картинка имитирущая карточки"
-          />
-          <span class="visually-hidden">Показать карточки</span>
-        </button>
-        <section class="cart">
+      <section data-test="catalog" class="catalog container">
+        <div class="catalog-flex">
+          <h2 class="visually-hidden">Фильтр гостиниц</h2>
+          <h2 class="catalog-text">Найдено гостиниц:38</h2>
+          <div class="catalog-filter-flex">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала дешовые</option>
+            </select>
+            <button class="button button-light">
+              <img
+                src="images/View-icon1.svg"
+                width="16"
+                height="14"
+                alt="Картинка имитирущая список"
+              />
+              <span class="visually-hidden">Показать список</span>
+            </button>
+            <button class="button button-light">
+              <img
+                src="images/View-icon2.svg"
+                width="16"
+                height="14"
+                alt="Картинка имитирущая карточки"
+              />
+              <span class="visually-hidden">Показать карточки</span>
+            </button>
+            <button class="button button-light">
+              <img
+                src="images/View-icon3.svg"
+                width="16"
+                height="14"
+                alt="Картинка имитирущая карточки"
+              />
+              <span class="visually-hidden">Показать карточки</span>
+            </button>
+          </div>
+        </div>
+        <div class="cart">
           <ul class="cart-list">
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -266,78 +283,85 @@
               <a class="pagination-link" href="#">4</a>
             </li>
           </ul>
-        </section>
+        </div>
       </section>
     </main>
     <footer data-test="footer" class="footer">
       <section data-test="subscribe" class="newslatter">
-        <h2 class="newslatter-text">Подпишитесь на рассылку</h2>
-        <p class="newslatter-subtext">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form
-          action="https://echo.htmlacademy.ru/"
-          class="newslatter-form"
-          method="post"
-        >
-          <label for="input-email">
-            <input
-              name="input-email"
-              type="email"
-              id="input-email"
-              placeholder="Ваш e-mail"
-            />
-          </label>
-          <button class="button input-email-button">Подписаться</button>
-        </form>
+        <div class="container footer-background">
+          <h2 class="newslatter-text">Подпишитесь на рассылку</h2>
+          <p class="newslatter-subtext">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form
+            action="https://echo.htmlacademy.ru/"
+            class="newslatter-form"
+            method="post"
+          >
+            <label for="input-email">
+              <input
+                name="input-email"
+                type="email"
+                id="input-email"
+                placeholder="Ваш e-mail"
+              />
+            </label>
+            <button class="button input-email-button">Подписаться</button>
+          </form>
+        </div>
       </section>
+
       <section class="footer-socials">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-socials-list">
-          <li class="footer-socials-item">
-            <a
-              href="#"
-              class="social-link social-link-VK"
-              aria-label="Мы во Вконтакте"
-            >
-              <span class="visually-hidden">Ссылка во Вконтакте</span>
-            </a>
-          </li>
-          <li class="footer-socials-item">
-            <a
-              href="#"
-              class="social-link social-link-Telegram"
-              aria-label="Мы во Вконтакте"
-            >
-              <span class="visually-hidden">Ссылка в Телеграмме</span>
-            </a>
-          </li>
-          <li class="footer-socials-item">
-            <a
-              href="#"
-              class="social-link social-link-YouTube"
-              aria-label="Мы во Вконтакте"
-            >
-              <span class="visually-hidden">Ссылка на YouTube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-phone">
-        <h2 class="visually-hidden">Телефонный номер</h2>
-        <a href="tel:+78128121212" class="footer-phone-number"
-          >+7 (812) 812-12-12</a
-        >
-      </section>
-      <section class="footer-contact-site">
-        <h2 class="visually-hidden">Сайт компании HtmlAcademy</h2>
-        <a href="https://htmlacademy.ru/study" class="footer-contact-site-more"
-          ><img
-            src="images/Logo _HtmlAcademy.svg"
-            alt="Ссылка на сайт HtmlAcademy"
-            width="115"
-            height="33"
-        /></a>
+        <div class="socials-link">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-socials-list">
+            <li class="footer-socials-item">
+              <a
+                href="#"
+                class="social-link social-link-VK"
+                aria-label="Мы во Вконтакте"
+              >
+                <span class="visually-hidden">Ссылка во Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                href="#"
+                class="social-link social-link-Telegram"
+                aria-label="Мы во Вконтакте"
+              >
+                <span class="visually-hidden">Ссылка в Телеграмме</span>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                href="#"
+                class="social-link social-link-YouTube"
+                aria-label="Мы во Вконтакте"
+              >
+                <span class="visually-hidden">Ссылка на YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-phone">
+          <h2 class="visually-hidden">Телефонный номер</h2>
+          <a href="tel:+78128121212" class="footer-phone-number"
+            >+7 (812) 812-12-12</a
+          >
+        </div>
+        <div class="footer-contact-site">
+          <h2 class="visually-hidden">Сайт компании HtmlAcademy</h2>
+          <a
+            href="https://htmlacademy.ru/study"
+            class="footer-contact-site-more"
+            ><img
+              src="images/Logo _HtmlAcademy.svg"
+              alt="Ссылка на сайт HtmlAcademy"
+              width="115"
+              height="33"
+          /></a>
+        </div>
       </section>
     </footer>
   </body>
