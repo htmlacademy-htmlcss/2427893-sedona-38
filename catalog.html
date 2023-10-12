@@ -10,30 +10,34 @@
     <header data-test="header" class="header-main">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-logo">
             <a class="navigation-link" href="index.html"
               ><img src="images/logo.svg" width="140" height="70" alt="Логотип"
             /></a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+          <li class="navigation-item link">
+            <a class="navigation-link" href="/index.html">Главная</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item link">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link">Гостиницы</a>
+          <li class="navigation-item link">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-right">
             <span class="visually-hidden">Поиск</span>
-            <button class="navigation-search searh-img"></button>
+            <button class="navigation-search searh-img">
+              <span class="visually-hidden">Кнопка поиска</span>
+            </button>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-favorites heart-img" href="#"> </a>
+          <li class="navigation-item navigation-item-right">
+            <a class="navigation-favorites heart-img" href="#">
+              <span class="visually-hidden">Ссылка Избранное</span>
+            </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-utem-search-button">
             <span class="visually-hidden">Кнопка поиска гостиницы</span>
             <button class="button navigation-button-search-hotel">
               Хочу сюда!
@@ -192,12 +196,14 @@
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
-              <img
-                src="images/Звёзды.svg"
-                alt="рейтинг 4 звезды"
-                class="rating-img"
-              />
-              <span class="rating-subtext">Рейтинг: 8,5</span>
+              <div class="rating-flex">
+                <img
+                  src="images/Звёзды.svg"
+                  alt="рейтинг 4 звезды"
+                  class="rating-img"
+                />
+                <span class="rating-subtext">Рейтинг: 8,5</span>
+              </div>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -215,12 +221,14 @@
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
-              <img
-                src="images/Звёзды.svg"
-                alt="рейтинг 4 звезды"
-                class="rating-img"
-              />
-              <span class="rating-subtext">Рейтинг: 9,2</span>
+              <div class="rating-flex">
+                <img
+                  src="images/Звёзды.svg"
+                  alt="рейтинг 4 звезды"
+                  class="rating-img"
+                />
+                <span class="rating-subtext">Рейтинг: 9,2</span>
+              </div>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -238,12 +246,14 @@
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
-              <img
-                src="images/2_Звезды.svg"
-                alt="рейтинг 4 звезды"
-                class="rating-img"
-              />
-              <span class="rating-subtext">Рейтинг: 6,9</span>
+              <div class="rating-flex">
+                <img
+                  src="images/2_Звезды.svg"
+                  alt="рейтинг 4 звезды"
+                  class="rating-img"
+                />
+                <span class="rating-subtext">Рейтинг: 6,9</span>
+              </div>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -261,12 +271,14 @@
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
-              <img
-                src="images/3_Звезды.svg"
-                alt="рейтинг 4 звезды"
-                class="rating-img"
-              />
-              <span class="rating-subtext">Рейтинг: 5</span>
+              <div class="rating-flex">
+                <img
+                  src="images/3_Звезды.svg"
+                  alt="рейтинг 4 звезды"
+                  class="rating-img"
+                />
+                <span class="rating-subtext">Рейтинг: 5</span>
+              </div>
             </li>
           </ul>
           <ul class="pagination">
@@ -287,10 +299,12 @@
       </section>
     </main>
     <footer data-test="footer" class="footer">
-      <section data-test="subscribe" class="newslatter">
+      <section data-test="subscribe" class="newslatter newslatter-catalog">
         <div class="container footer-background">
-          <h2 class="newslatter-text">Подпишитесь на рассылку</h2>
-          <p class="newslatter-subtext">
+          <h2 class="newslatter-text newslatter-text-catalog">
+            Подпишитесь на рассылку
+          </h2>
+          <p class="newslatter-subtext newslatter-subtext-catalog">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form
@@ -304,6 +318,7 @@
                 type="email"
                 id="input-email"
                 placeholder="Ваш e-mail"
+                class="input-mail-catalog"
               />
             </label>
             <button class="button input-email-button">Подписаться</button>
