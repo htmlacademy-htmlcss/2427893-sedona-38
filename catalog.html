@@ -10,30 +10,34 @@
     <header data-test="header" class="header-main">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-logo">
             <a class="navigation-link" href="index.html"
               ><img src="images/logo.svg" width="140" height="70" alt="Логотип"
             /></a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+          <li class="navigation-item link">
+            <a class="navigation-link" href="/index.html">Главная</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item link">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link">Гостиницы</a>
+          <li class="navigation-item link">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-right">
             <span class="visually-hidden">Поиск</span>
-            <button class="navigation-search searh-img"></button>
+            <button class="navigation-search searh-img">
+              <span class="visually-hidden">Кнопка поиска</span>
+            </button>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-favorites heart-img" href="#"> </a>
+          <li class="navigation-item navigation-item-right">
+            <a class="navigation-favorites heart-img" href="#">
+              <span class="visually-hidden">Ссылка Избранное</span>
+            </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-utem-search-button">
             <span class="visually-hidden">Кнопка поиска гостиницы</span>
             <button class="button navigation-button-search-hotel">
               Хочу сюда!
@@ -44,120 +48,137 @@
     </header>
     <main data-test="main" class="main-catalog">
       <section data-test="filter" class="catalog-filter">
-        <h1 class="main-catalog-text">Гостиницы Седоны</h1>
-        <nav class="catalog-navigation">
-          <ul class="catalog-navigation-list">
-            <li class="catalog-navigation-item">
-              <img
-                src="images/home_catalog_navogation.svg"
-                alt="Картинка ссылки 'Домой'"
-                class="catalog-navigation-img"
-                width="13"
-                height="15"
-              />
-            </li>
-            <li class="catalog-navigation-item">
-              <img
-                src="images/arrow.svg"
-                alt="Картинка стрелочки"
-                class="catalog-navigation-path"
-                width="8"
-              />
-            </li>
-            <li class="catalog-navigation-item">Гостиницы</li>
-          </ul>
-        </nav>
+        <div class="container container-filter-flex">
+          <h1 class="main-catalog-text">Гостиницы Седоны</h1>
+          <nav class="catalog-navigation">
+            <ul class="catalog-navigation-list">
+              <li class="catalog-navigation-item">
+                <img
+                  src="images/home_catalog_navogation.svg"
+                  alt="Картинка ссылки 'Домой'"
+                  class="catalog-navigation-img"
+                  width="13"
+                  height="15"
+                />
+              </li>
+              <li class="catalog-navigation-item">
+                <img
+                  src="images/arrow.svg"
+                  alt="Картинка стрелочки"
+                  class="catalog-navigation-path"
+                  width="8"
+                />
+              </li>
+              <li class="catalog-navigation-item">Гостиницы</li>
+            </ul>
+          </nav>
+          <div class="filter-flex">
+            <h2 class="visually-hidden">Список с фильтрами</h2>
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" checked />
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" checked />
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" />
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" checked />
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" />
+                      Отель
+                    </label>
+                  </li>
+                  <li class="catalog-info-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" />
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
 
-        <h2 class="visually-hidden">Список с фильтрами</h2>
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" checked />
-                  Бассейн
-                </label>
-              </li>
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" checked />
-                  Парковка
-                </label>
-              </li>
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" />
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="radio" checked />
-                  Гостиница
-                </label>
-              </li>
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="radio" />
-                  Отель
-                </label>
-              </li>
-              <li class="catalog-info-item">
-                <label class="control">
-                  <input class="control-input" type="radio" />
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-fielter-group">
-            <input type="range" min="0" max="9000" step="2" />
-          </fieldset>
-          <button class="control-button button" type="submit">Применить</button>
-          <button class="control-button-reset button" type="reset">
-            Сбросить
-          </button>
-        </form>
+            <div class="catalog-filter-price-flex">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset class="catalog-fielter-group">
+                  <input type="range" min="0" max="9000" step="2" />
+                </fieldset>
+              </form>
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <button class="control-button button" type="submit">
+                  Применить
+                </button>
+                <button class="control-button-reset button" type="reset">
+                  Сбросить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
-      <section data-test="catalog" class="catalog">
-        <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала дешовые</option>
-        </select>
-        <button class="button button-light">
-          <img
-            src="images/View-icon1.svg"
-            width="16"
-            height="14"
-            alt="Картинка имитирущая список"
-          />
-          <span class="visually-hidden">Показать список</span>
-        </button>
-        <button class="button button-light">
-          <img
-            src="images/View-icon2.svg"
-            width="16"
-            height="14"
-            alt="Картинка имитирущая карточки"
-          />
-          <span class="visually-hidden">Показать карточки</span>
-        </button>
-        <button class="button button-light">
-          <img
-            src="images/View-icon3.svg"
-            width="16"
-            height="14"
-            alt="Картинка имитирущая карточки"
-          />
-          <span class="visually-hidden">Показать карточки</span>
-        </button>
-        <section class="cart">
+      <section data-test="catalog" class="catalog container">
+        <div class="catalog-flex">
+          <h2 class="visually-hidden">Фильтр гостиниц</h2>
+          <h2 class="catalog-text">Найдено гостиниц:38</h2>
+          <div class="catalog-filter-flex">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала дешовые</option>
+            </select>
+            <button class="button button-light">
+              <img
+                src="images/View-icon1.svg"
+                width="16"
+                height="14"
+                alt="Картинка имитирущая список"
+              />
+              <span class="visually-hidden">Показать список</span>
+            </button>
+            <button class="button button-light">
+              <img
+                src="images/View-icon2.svg"
+                width="16"
+                height="14"
+                alt="Картинка имитирущая карточки"
+              />
+              <span class="visually-hidden">Показать карточки</span>
+            </button>
+            <button class="button button-light">
+              <img
+                src="images/View-icon3.svg"
+                width="16"
+                height="14"
+                alt="Картинка имитирущая карточки"
+              />
+              <span class="visually-hidden">Показать карточки</span>
+            </button>
+          </div>
+        </div>
+        <div class="cart">
           <ul class="cart-list">
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -175,12 +196,14 @@
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
-              <img
-                src="images/Звёзды.svg"
-                alt="рейтинг 4 звезды"
-                class="rating-img"
-              />
-              <span class="rating-subtext">Рейтинг: 8,5</span>
+              <div class="rating-flex">
+                <img
+                  src="images/Звёзды.svg"
+                  alt="рейтинг 4 звезды"
+                  class="rating-img"
+                />
+                <span class="rating-subtext">Рейтинг: 8,5</span>
+              </div>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -198,12 +221,14 @@
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
-              <img
-                src="images/Звёзды.svg"
-                alt="рейтинг 4 звезды"
-                class="rating-img"
-              />
-              <span class="rating-subtext">Рейтинг: 9,2</span>
+              <div class="rating-flex">
+                <img
+                  src="images/Звёзды.svg"
+                  alt="рейтинг 4 звезды"
+                  class="rating-img"
+                />
+                <span class="rating-subtext">Рейтинг: 9,2</span>
+              </div>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -221,12 +246,14 @@
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
-              <img
-                src="images/2_Звезды.svg"
-                alt="рейтинг 4 звезды"
-                class="rating-img"
-              />
-              <span class="rating-subtext">Рейтинг: 6,9</span>
+              <div class="rating-flex">
+                <img
+                  src="images/2_Звезды.svg"
+                  alt="рейтинг 4 звезды"
+                  class="rating-img"
+                />
+                <span class="rating-subtext">Рейтинг: 6,9</span>
+              </div>
             </li>
             <li class="cart-item">
               <a href="#" class="cart-img"
@@ -244,12 +271,14 @@
               <button type="submit" class="button cart-button">
                 В избранное
               </button>
-              <img
-                src="images/3_Звезды.svg"
-                alt="рейтинг 4 звезды"
-                class="rating-img"
-              />
-              <span class="rating-subtext">Рейтинг: 5</span>
+              <div class="rating-flex">
+                <img
+                  src="images/3_Звезды.svg"
+                  alt="рейтинг 4 звезды"
+                  class="rating-img"
+                />
+                <span class="rating-subtext">Рейтинг: 5</span>
+              </div>
             </li>
           </ul>
           <ul class="pagination">
@@ -266,78 +295,88 @@
               <a class="pagination-link" href="#">4</a>
             </li>
           </ul>
-        </section>
+        </div>
       </section>
     </main>
     <footer data-test="footer" class="footer">
-      <section data-test="subscribe" class="newslatter">
-        <h2 class="newslatter-text">Подпишитесь на рассылку</h2>
-        <p class="newslatter-subtext">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form
-          action="https://echo.htmlacademy.ru/"
-          class="newslatter-form"
-          method="post"
-        >
-          <label for="input-email">
-            <input
-              name="input-email"
-              type="email"
-              id="input-email"
-              placeholder="Ваш e-mail"
-            />
-          </label>
-          <button class="button input-email-button">Подписаться</button>
-        </form>
+      <section data-test="subscribe" class="newslatter newslatter-catalog">
+        <div class="container footer-background">
+          <h2 class="newslatter-text newslatter-text-catalog">
+            Подпишитесь на рассылку
+          </h2>
+          <p class="newslatter-subtext newslatter-subtext-catalog">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form
+            action="https://echo.htmlacademy.ru/"
+            class="newslatter-form"
+            method="post"
+          >
+            <label for="input-email">
+              <input
+                name="input-email"
+                type="email"
+                id="input-email"
+                placeholder="Ваш e-mail"
+                class="input-mail-catalog"
+              />
+            </label>
+            <button class="button input-email-button">Подписаться</button>
+          </form>
+        </div>
       </section>
+
       <section class="footer-socials">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-socials-list">
-          <li class="footer-socials-item">
-            <a
-              href="#"
-              class="social-link social-link-VK"
-              aria-label="Мы во Вконтакте"
-            >
-              <span class="visually-hidden">Ссылка во Вконтакте</span>
-            </a>
-          </li>
-          <li class="footer-socials-item">
-            <a
-              href="#"
-              class="social-link social-link-Telegram"
-              aria-label="Мы во Вконтакте"
-            >
-              <span class="visually-hidden">Ссылка в Телеграмме</span>
-            </a>
-          </li>
-          <li class="footer-socials-item">
-            <a
-              href="#"
-              class="social-link social-link-YouTube"
-              aria-label="Мы во Вконтакте"
-            >
-              <span class="visually-hidden">Ссылка на YouTube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-phone">
-        <h2 class="visually-hidden">Телефонный номер</h2>
-        <a href="tel:+78128121212" class="footer-phone-number"
-          >+7 (812) 812-12-12</a
-        >
-      </section>
-      <section class="footer-contact-site">
-        <h2 class="visually-hidden">Сайт компании HtmlAcademy</h2>
-        <a href="https://htmlacademy.ru/study" class="footer-contact-site-more"
-          ><img
-            src="images/Logo _HtmlAcademy.svg"
-            alt="Ссылка на сайт HtmlAcademy"
-            width="115"
-            height="33"
-        /></a>
+        <div class="socials-link">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-socials-list">
+            <li class="footer-socials-item">
+              <a
+                href="#"
+                class="social-link social-link-VK"
+                aria-label="Мы во Вконтакте"
+              >
+                <span class="visually-hidden">Ссылка во Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                href="#"
+                class="social-link social-link-Telegram"
+                aria-label="Мы во Вконтакте"
+              >
+                <span class="visually-hidden">Ссылка в Телеграмме</span>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                href="#"
+                class="social-link social-link-YouTube"
+                aria-label="Мы во Вконтакте"
+              >
+                <span class="visually-hidden">Ссылка на YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-phone">
+          <h2 class="visually-hidden">Телефонный номер</h2>
+          <a href="tel:+78128121212" class="footer-phone-number"
+            >+7 (812) 812-12-12</a
+          >
+        </div>
+        <div class="footer-contact-site">
+          <h2 class="visually-hidden">Сайт компании HtmlAcademy</h2>
+          <a
+            href="https://htmlacademy.ru/study"
+            class="footer-contact-site-more"
+            ><img
+              src="images/Logo _HtmlAcademy.svg"
+              alt="Ссылка на сайт HtmlAcademy"
+              width="115"
+              height="33"
+          /></a>
+        </div>
       </section>
     </footer>
   </body>
